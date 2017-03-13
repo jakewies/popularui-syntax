@@ -1,0 +1,16 @@
+{
+  "name": "popularui-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "private": "false",
+  "description": "Atom syntax theme by <your name here>",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/jake-wies/popularui-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

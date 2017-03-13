@@ -1,0 +1,40 @@
+@import "colors";
+
+/*
+ * Syntax Variables
+ */
+
+// General colors
+@syntax-text-color       : #fff;
+@syntax-cursor-color     : #fff;
+@syntax-comment-color    : #969896;
+@syntax-background-color : #1d1f21;
+@syntax-selection-color  : lighten(@syntax-background-color, 10%); // this is targeted with css using ::selection
+
+
+// Guide colors
+// Can all be the same color. Not sure if we should support. What other text editors/IDE's support this???
+// To make these colors as automated as possible, we can just used darken() on the background color.
+@syntax-wrap-guide-color: darken(@syntax-background-color, 20%);
+@syntax-indent-guide-color: darken(@syntax-background-color, 20%);
+@syntax-invisible-character-color: darken(@syntax-background-color, 20%);
+
+// For find and replace markers
+// Make this a default color for simplicity
+@syntax-result-marker-color: #99a9b3;
+@syntax-result-marker-color-selected: white;
+
+// Gutter colors
+@syntax-gutter-text-color: @syntax-text-color;
+@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
+@syntax-gutter-background-color: #282a2e;
+@syntax-gutter-background-color-selected: #373b41;
+
+// For git diff info. i.e. in the gutter
+// We can leave these the same throughout all syntax themes. Seems like something
+// we should support but also doesn't seem like something we should worry about having
+// the user customize. Thoughts??
+@syntax-color-renamed: @blue;
+@syntax-color-added: @green;
+@syntax-color-modified: @orange;
+@syntax-color-removed: @red;
